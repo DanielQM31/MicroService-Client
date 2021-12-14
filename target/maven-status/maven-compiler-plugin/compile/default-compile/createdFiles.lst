@@ -1,0 +1,10 @@
+com\bank\client\infraestructure\rest\ClientController.class
+com\bank\client\application\impl\ClientOperationsImpl.class
+com\bank\client\ClientApplication.class
+com\bank\client\domain\Client.class
+com\bank\client\infraestructure\model\dao\ClientDao.class
+com\bank\client\infraestructure\repository\IClientCrudRepository.class
+com\bank\client\application\ClientOperations.class
+com\bank\client\infraestructure\repository\ClientCrudRepository.class
+com\bank\client\infraestructure\spring\config\SpringConfiguration.class
+com\bank\client\application\model\ClientRepository.class

@@ -1,0 +1,10 @@
+C:\Users\DANIEL\Videos\client\src\main\java\com\bank\client\ClientApplication.java
+C:\Users\DANIEL\Videos\client\src\main\java\com\bank\client\infraestructure\repository\ClientCrudRepository.java
+C:\Users\DANIEL\Videos\client\src\main\java\com\bank\client\application\model\ClientRepository.java
+C:\Users\DANIEL\Videos\client\src\main\java\com\bank\client\domain\Client.java
+C:\Users\DANIEL\Videos\client\src\main\java\com\bank\client\application\ClientOperations.java
+C:\Users\DANIEL\Videos\client\src\main\java\com\bank\client\infraestructure\spring\config\SpringConfiguration.java
+C:\Users\DANIEL\Videos\client\src\main\java\com\bank\client\infraestructure\rest\ClientController.java
+C:\Users\DANIEL\Videos\client\src\main\java\com\bank\client\application\impl\ClientOperationsImpl.java
+C:\Users\DANIEL\Videos\client\src\main\java\com\bank\client\infraestructure\model\dao\ClientDao.java
+C:\Users\DANIEL\Videos\client\src\main\java\com\bank\client\infraestructure\repository\IClientCrudRepository.java

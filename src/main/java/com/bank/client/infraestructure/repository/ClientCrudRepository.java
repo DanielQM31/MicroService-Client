@@ -3,6 +3,7 @@ package com.bank.client.infraestructure.repository;
 import com.bank.client.application.model.ClientRepository;
 import com.bank.client.domain.Client;
 import com.bank.client.infraestructure.model.dao.ClientDao;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
@@ -45,25 +46,13 @@ public class ClientCrudRepository implements ClientRepository {
 
     private Client mapClientDaoToClient(ClientDao clientDao){
         Client client = new Client();
-        client.setId(clientDao.getId());
-        client.setDni(clientDao.getDni());
-        client.setName(clientDao.getName());
-        client.setLastName(clientDao.getLastName());
-        client.setRuc(clientDao.getRuc());
-        client.setBusinessName(clientDao.getBusinessName());
-        client.setType(clientDao.getType());
+        BeanUtils.copyProperties(clientDao, client);
         return client;
     }
 
     private ClientDao mapClientToClientDao(Client client){
         ClientDao clientDao = new ClientDao();
-        clientDao.setId(client.getId());
-        clientDao.setDni(client.getDni());
-        clientDao.setName(client.getName());
-        clientDao.setLastName(client.getLastName());
-        clientDao.setRuc(client.getRuc());
-        clientDao.setBusinessName(client.getBusinessName());
-        clientDao.setType(client.getType());
+        BeanUtils.copyProperties(client, clientDao);
         return clientDao;
     }
 
